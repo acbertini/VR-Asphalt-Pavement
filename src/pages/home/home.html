@@ -2,6 +2,8 @@
   <ion-navbar>
     <ion-title>Home</ion-title>
   </ion-navbar>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
 </ion-header>
 
 <ion-content padding>
@@ -14,4 +16,33 @@
     Take a look at the <code>src/pages/</code> directory to add or change tabs,
     update any existing page or create new pages.
   </p>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCn1CgnOHUqsImSPEwmXfSC3sVGS1caQM0",
+      authDomain: "vr-asphalt-pavement.firebaseapp.com",
+      databaseURL: "https://vr-asphalt-pavement.firebaseio.com",
+      projectId: "vr-asphalt-pavement",
+      storageBucket: "vr-asphalt-pavement.appspot.com",
+      messagingSenderId: "1060723714349"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="/__/firebase/5.4.1/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="/__/firebase/5.4.1/firebase-auth.js"></script>
+    <script src="/__/firebase/5.4.1/firebase-database.js"></script>
+    <script src="/__/firebase/5.4.1/firebase-messaging.js"></script>
+    <script src="/__/firebase/5.4.1/firebase-functions.js"></script>
+
+    <!-- Comment out (or don't include) services that you don't want to use -->
+    <!-- <script src="/__/firebase/5.4.1/firebase-storage.js"></script> -->
+
+    <script src="/__/firebase/init.js"></script>
+
 </ion-content>
